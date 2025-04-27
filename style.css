@@ -82,3 +82,42 @@ body {
   font-size: 24px; /* Aumenta o tamanho */
   font-weight: bold; /* Deixa em negrito */
 }
+
+
+/* Container das fotos laterais */
+.fotos-laterais {
+  position: fixed;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  pointer-events: none; /* Não atrapalhar cliques no meio do site */
+  z-index: 10;
+}
+
+.fotos-laterais img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  animation: flutuar 4s ease-in-out infinite alternate;
+}
+
+/* Animação subindo e descendo */
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(20px); }
+}
+
+/* Lado esquerdo */
+.fotos-laterais.esquerda {
+  left: 10px;
+}
+
+/* Lado direito */
+.fotos-laterais.direita {
+  right: 10px;
+}
