@@ -1,0 +1,84 @@
+/* Fundo com mapa */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('imagens/mapa-coari.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+/* Cabeçalho com a foto e título */
+.header {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+.foto-poster {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #4CAF50;
+  margin-bottom: 15px;
+}
+
+/* Botões de menu */
+.menu {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu button:hover {
+  background-color: #45a049;
+}
+
+/* Área do jogo */
+.game-area {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+/* Estilo geral para botões dentro da área do jogo */
+.game-area button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+/* Efeito hover bonito */
+.game-area button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.game-area h2 {
+  font-size: 28px; /* Aumenta o tamanho */
+  font-weight: bold; /* Deixa em negrito */
+}
+
+.game-area p {
+  font-size: 24px; /* Aumenta o tamanho */
+  font-weight: bold; /* Deixa em negrito */
+}
